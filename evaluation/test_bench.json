@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "text": "Please clear payment to Acme Corp for PO-9901 totaling 1500.00 USD immediately.",
+    "expected_routing": "approve",
+    "expected_reconciled": true
+  },
+  {
+    "id": 2,
+    "text": "Invoice from Delta Labs. Total due is $420.50 against PO-9902.",
+    "expected_routing": "approve",
+    "expected_reconciled": true
+  },
+  {
+    "id": 3,
+    "text": "Billing statement from Delta Labs for PO-9902. The requested amount is 550.00.",
+    "expected_routing": "flag_discrepancy",
+    "expected_reconciled": false
+  },
+  {
+    "id": 4,
+    "text": "Settle outstanding transaction for unknown vendor matching order reference PO-8899. Amount is 250.00.",
+    "expected_routing": "flag_discrepancy",
+    "expected_reconciled": false
+  },
+  {
+    "id": 5,
+    "text": "System notification: payment transaction logs generated without a valid purchase order identifier. Amount is 100.00.",
+    "expected_routing": "flag_discrepancy",
+    "expected_reconciled": false
+  }
+]
