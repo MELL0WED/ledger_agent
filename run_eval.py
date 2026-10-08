@@ -3,9 +3,6 @@ from evaluation.evaluator_async import run_scale_stress_test
 from app.database.qdrant_client import init_qdrant_vector_store
 
 if __name__ == "__main__":
-    print("====================================================")
-    print("BOOSTRAPPING CONTAINERIZED SYSTEM STATE WORKSPACE")
-    print("====================================================")
     
     try:
         init_qdrant_vector_store()
